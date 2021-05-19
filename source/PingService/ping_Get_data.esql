@@ -9,6 +9,7 @@ CREATE COMPUTE MODULE ping_Get_data
     	SET OutputRoot.JSON.Data.Ping.workPath = WorkPath;
     	SET OutputRoot.JSON.Data.Ping.msgFlow = MessageFlowLabel;
     	SET OutputRoot.JSON.Data.Ping.dateTime = CURRENT_TIMESTAMP;
+		
 		RETURN TRUE;
 	END;
 END MODULE;
